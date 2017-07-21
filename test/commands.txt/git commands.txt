@@ -1,0 +1,9 @@
+rm -rf
+cp
+cp -rf
+mv
+cd
+cd ..
+cd /
+cd ~
+start .

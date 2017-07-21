@@ -1,0 +1,14 @@
+h4{
+  color: green;
+}
+div{
+  border: 1 px solid blue;
+  /*border-color: blue;
+  border-width: 1px;
+  border-style: solid;  */
+  /*previous 3 lines do the same as first border line*/
+}
+/*telling div class .right to change width*/
+.right{
+  width: 300px;
+}

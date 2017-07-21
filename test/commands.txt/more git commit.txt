@@ -1,0 +1,279 @@
+kschmit1@AISD241051 MINGW32 ~
+$ cd desktop
+
+kschmit1@AISD241051 MINGW32 ~/desktop
+$ mkdir gittest
+
+kschmit1@AISD241051 MINGW32 ~/desktop
+$ cd gittest
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest
+$ git init
+Initialized empty Git repository in C:/Users/kschmit1/Desktop/gittest/.git/
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ touch index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ touch style.css
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ touch aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ vi index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git add .
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   aboutme.txt
+        new file:   index.html
+        new file:   style.css
+
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git commit -m "First commit to index.html"
+[master (root-commit) 4edc79f] First commit to index.html
+ Committer: KEVIN SCHMITT <kschmit1@aisd.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1 insertion(+)
+ create mode 100644 aboutme.txt
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git log
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8 (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ vi aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git add .
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git commit -m "First edit to aboutme.txt"
+[master d3c6ff4] First edit to aboutme.txt
+ Committer: KEVIN SCHMITT <kschmit1@aisd.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git log
+commit d3c6ff4ba2e3c75cd85a2a34399fae3dc5c6e1ad (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:31:14 2017 -0500
+
+    First edit to aboutme.txt
+
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ vi aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   aboutme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git add .
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git commit -m "favorite movie added to aboutme.txt"
+[master 2cc5db9] favorite movie added to aboutme.txt
+ Committer: KEVIN SCHMITT <kschmit1@aisd.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git log
+commit 2cc5db9c4712275db1d8801713e0d972fc6c62a3 (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:33:37 2017 -0500
+
+    favorite movie added to aboutme.txt
+
+commit d3c6ff4ba2e3c75cd85a2a34399fae3dc5c6e1ad
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:31:14 2017 -0500
+
+    First edit to aboutme.txt
+
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git revert -n HEAD
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ git log
+commit 2cc5db9c4712275db1d8801713e0d972fc6c62a3 (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:33:37 2017 -0500
+
+    favorite movie added to aboutme.txt
+
+commit d3c6ff4ba2e3c75cd85a2a34399fae3dc5c6e1ad
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:31:14 2017 -0500
+
+    First edit to aboutme.txt
+
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ vi aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ git status
+On branch master
+You are currently reverting commit 2cc5db9.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   aboutme.txt
+
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ git log
+commit 2cc5db9c4712275db1d8801713e0d972fc6c62a3 (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:33:37 2017 -0500
+
+    favorite movie added to aboutme.txt
+
+commit d3c6ff4ba2e3c75cd85a2a34399fae3dc5c6e1ad
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:31:14 2017 -0500
+
+    First edit to aboutme.txt
+
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ vi aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ git add .
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master|REVERTING)
+$ git commit -m "added favorite BOOK"
+[master f0634b0] added favorite BOOK
+ Committer: KEVIN SCHMITT <kschmit1@aisd.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ git log
+commit f0634b0a08b3fde8c62a2c27aa3eecdfd8a0e107 (HEAD -> master)
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:36:49 2017 -0500
+
+    added favorite BOOK
+
+commit 2cc5db9c4712275db1d8801713e0d972fc6c62a3
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:33:37 2017 -0500
+
+    favorite movie added to aboutme.txt
+
+commit d3c6ff4ba2e3c75cd85a2a34399fae3dc5c6e1ad
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:31:14 2017 -0500
+
+    First edit to aboutme.txt
+
+commit 4edc79fe3aa4846432435d812d1958b2adb38dc8
+Author: KEVIN SCHMITT <kschmit1@aisd.net>
+Date:   Mon Jul 17 22:27:58 2017 -0500
+
+    First commit to index.html
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$ vi aboutme.txt
+
+kschmit1@AISD241051 MINGW32 ~/desktop/gittest (master)
+$

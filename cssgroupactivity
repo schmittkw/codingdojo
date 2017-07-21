@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Group Activity</title>
+    <style media="screen">
+
+      .left_content, .middle_content, .right_content{
+      display: inline-block;
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+      .header{
+        width: 580px;
+        height: 150px;
+        background-color: red;
+      }
+      .left_content{
+        width: 130px;
+        height: 600px;
+        background-color: green;
+      }
+      .middle_content{
+        width: 250px;
+        height: 600px;
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: yellow;
+      }
+      .right_content{
+        width: 130px;
+        height: 600px;
+        background-color: green;
+      }
+      .footer{
+        width: 580px;
+        height: 225px;
+        background-color: blue;
+      }
+      .sub_footer{
+        width: 150px;
+        height: 250px;
+        background-color: violet;
+        margin: 20px;
+        display: inline-block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+      </div><!-- end_of_header -->
+      <div class="left_content">
+      </div><!-- end_of_left_content -->
+      <div class="middle_content">
+      </div><!-- end_of_middle_content -->
+      <div class="right_content">
+      </div><!-- end_of_right_content -->
+      <div class="footer">
+        <div class="sub_footer">
+        </div><!-- end_of_sub_footer -->
+        <div class="sub_footer">
+        </div><!-- end_of_sub_footer -->
+        <div class="sub_footer">
+        </div><!-- end_of_sub_footer -->
+        <div class="sub_footer">
+        </div><!-- end_of_sub_footer -->
+      </div><!-- end_of_footer -->
+    </div><!-- end_of_container -->
+  </body>
+</html>
