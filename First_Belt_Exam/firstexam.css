@@ -1,0 +1,158 @@
+#maincontent{
+  border-left: 10px solid #121212;
+  border-right: 10px solid #121212;
+  border-top: 10px solid #121212;
+  background-color: #191919;
+  height: 1484px;
+  width: 1275px;
+}
+#textured{
+  height: 176px;
+  width: 1269px;
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+#footer{
+  background: #191919
+}
+#ridiculous,#ipsum,#tellus,#sem{
+  display: inline-block;
+  width: 235px;
+  height: 143px;
+  background: #191919;
+  color: #fefefe;
+}
+#ridiculous,#ipsum,#tellus,#sem,.icon{
+  vertical-align: top;
+  margin-top: 37px;
+  margin-left: 14px;
+}
+#built,#builder,#access,#custom{
+  background: #191919;
+  width: 222px;
+  height: 379px;
+  display: inline-block;
+  margin-left: 71px;
+  vertical-align: top;
+  color: white;
+}
+.projects{
+  color: #e56e21;
+  text-decoration: none;
+  font-style: italic;
+}
+.arrow{
+  height: 22px;
+  width: 36px;
+}
+#home,#blog,#portfolio,#shortcodes,#features,#contentlink{
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: -6px;
+  border-left: 2px solid grey;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  padding-right: 21px;
+  font-size: 15px;
+  background: linear-gradient(#535353,#2c2c2c);
+}
+#home{
+  border-left: 0px;
+  padding-left: 28px;
+  margin-left: 0px;
+}
+#contentlink{
+  padding-right: 710px;
+}
+#textured a:nth-child(1){
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+#textured p{
+  color: white;
+  width: 810px;
+  margin-left: 80px;
+  display: inline-block;
+  margin-top: 30px;
+}
+#built a{
+  text-decoration: none;
+  text-decoration: none;
+  color: #e57e2e;
+  font-size: 21px;
+}
+#builder a{
+  text-decoration: none;
+  color: #e57e2e;
+  font-size: 21px;
+}
+#access a{
+  text-decoration: none;
+  text-decoration: none;
+  color: #e57e2e;
+  font-size: 21px;
+}
+#custom a{
+  text-decoration: none;
+  text-decoration: none;
+  color: #e57e2e;
+  font-size: 21px;
+}
+.sleeping{
+  width: 1273px;
+  border-bottom: 5px solid #3a3a3a;
+}
+.buynow{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  background: #ef873d;
+  border-radius: 7px;
+  margin-left: 202px;
+  font-size: 26px;
+}
+.portfolio{
+  height: 137px;
+  width: 214px;
+  border: 5px solid #353535;
+}
+h1{
+  color: white;
+  display: inline-block;
+  margin-left: 30px;
+  font-style: italic;
+}
+h2{
+  color: white;
+  margin-right: 979px;
+  margin-left: 30px;
+  display: inline-block;
+  font-size: 31px;
+}
+h3{
+  color: #ee7227;
+  font-size: 20px;
+}
+h4{
+  color: white;
+  margin-left: 80px;
+  margin-top: 30px;
+  padding-top: 17px;
+  font-size: 27px;
+  margin-bottom: -13px;
+}
+h5{
+  color: white;
+  display: inline-block;
+  margin-left: 940px;
+}

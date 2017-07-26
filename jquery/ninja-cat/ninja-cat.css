@@ -1,0 +1,9 @@
+#content{
+  background: green;
+  width: 400px;
+  height: 800px;
+}
+#content img{
+  display: block;
+  margin-top: 5px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>ninja jQuery</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="ninja.css">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript">
+
+       $(document).ready(function(){
+      // begin typing in jQuery functions
+        $('img').click(function(){
+          $(this).hide()
+        })
+        $( "button" ).click(function(){
+        $( "img" ).show( "slow" );
+        });
+
+       });
+      </script>
+   </head>
+    <body>
+      <div id="wrapper">
+        <img src="ninja.png">
+        <img src="bootstrap.png">
+        <img src="ninja.png">
+        <img src="bootstrap.png">
+        <img src="ninja.png">
+        <img src="bootstrap.png">
+        <img src="ninja.png">
+        <img src="bootstrap.png">
+        <button>Reset</button>
+      </div>
+    </body>
+   </html>

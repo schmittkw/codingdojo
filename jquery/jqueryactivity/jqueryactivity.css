@@ -1,0 +1,43 @@
+#wrapper{
+  width: 1000px;
+  height: 700px;
+  border: 10px solid silver;
+  background-image: url('dojo.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.container{
+  width: 400px;
+  height: 300px;
+  background: orange;
+  border: 5px solid silver;
+  margin-top: 178px;
+  margin: 173px auto;
+  border-radius: 7px;
+  opacity: 0.8;
+  text-align: center;
+}
+.footer{
+  margin: auto;
+  background: white;
+  width: 200px;
+  height: 100px;
+  opacity: .9;
+}
+.container button{
+  width: 78px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+select{
+  text-align: center;
+  margin-left: 20px;
+}
+h1{
+  color:blue;
+  text-align: center;
+  text-shadow: 2px 2px white;
+  padding-bottom: 22px;
+}

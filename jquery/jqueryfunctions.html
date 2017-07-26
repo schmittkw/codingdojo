@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>firstjquery</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="jqueryfunctions.css">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('#firstbutton').click(function(){
+            $('#addp').css('background-color', 'red')
+          })
+          $('#slidebutton').click(function(){
+            $('#slidep').slideToggle('slow')
+          })
+          $('#appbutton').click(function(){
+            $('#appep').append("<p>That is how it is done.</p>")
+          })
+
+        });
+      </script>
+   </head>
+     <body>
+      <div id='wrapper'>
+       <div id="addclassbutt">
+         <h1>Add Class</h1>
+         <button id="firstbutton">Add Class</button>
+         <p id="addp">Click the button to add 'red' to this paragraph</p>
+       </div>
+       <div id="slidetog">
+         <h1>SlideToggle</h1>
+         <button id="slidebutton">SlideToggle</button>
+         <p id="slidep">Click the button to slidetoggle a hidden image</p>
+       </div>
+       <div id="append">
+         <h1>Append</h1>
+         <button id='appbutton'>Append</button>
+         <p id="appep">Click the button to append a new paragraph!</p>
+       </div>
+     </div>
+   </body>
+</html>

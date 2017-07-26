@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>ninja-cat jQuery</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="ninja-cat.css">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript">
+
+       $(document).ready(function(){
+          $('#cat0').on({
+           'click': function(){
+           $('#cat0').attr('src','ninja0.png');
+          }
+          });
+          $('#cat1').on({
+           'click': function(){
+            $('#cat1').attr('src','ninja1.png');
+          }
+          });
+          $('#cat2').on({
+          'click': function(){
+            $('#cat2').attr('src','ninja2.png');
+          }
+          });
+          $('#cat3').on({
+          'click': function(){
+            $('#cat3').attr('src','ninja3.png');
+          }
+          });
+          $('#cat4').on({
+          'click': function(){
+            $('#cat4').attr('src','ninja4.png');
+          }
+          });
+       });
+
+      </script>
+   </head>
+   <body>
+     <div id="content">
+       <img id='cat0' src="cat0.png" data-alt-src='ninja0.png' />
+       <img id="cat1" src="cat1.png" data-alt-src='ninja1.png'>
+       <img id="cat2" src="cat2.png" data-alt-src='ninja2.png'>
+       <img id="cat3" src="cat3.png" data-alt-src='ninja3.png'>
+       <img id="cat4" src="cat4.png" data-alt-src='ninja4.png'>
+
+     </div>
+
+   </body>
+</html>

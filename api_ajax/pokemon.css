@@ -1,0 +1,23 @@
+#wrapper {
+  width: 700px;
+  height: 3500px;
+  background: yellow;
+  text-align: center;
+}
+
+#content {
+  width: 353px;
+  height: 655px;
+  background: red;
+  margin-left: 58px;
+  position: fixed;
+}
+
+#wrapper, #content {
+  display: inline-block;
+}
+
+button {
+  margin-top: 100px;
+  padding: 15px;
+}

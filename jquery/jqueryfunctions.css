@@ -1,0 +1,56 @@
+#wrapper{
+  width: 910px;
+  height: 910px;
+  background: black;
+}
+#addclassbutt{
+  background: silver;
+  width: 900px;
+  height: 233px;
+  border-bottom: 5px solid black;
+}
+#slidetog{
+  background-color: orange;
+  margin-top: -22px;
+  width: 900px;
+  height: 233px;
+  color: white;
+  border-bottom: 5px solid black;
+}
+#append{
+  background-color: green;
+  margin-top: -22px;
+  width: 900px;
+  height: 233px;
+  color: white;
+}
+h1{
+  text-align: center;
+  padding-top: 25px;
+}
+#addp{
+  display: inline-block;
+  /*background-color: yellow;*/
+}
+#slidep{
+  display: inline-block;
+}
+#appep{
+  display: inline-block;
+}
+#slidebutton{
+  padding:10px;
+  margin-left: 175px;
+  margin-right: 50px;
+}
+#firstbutton{
+  padding:10px;
+  margin-left: 175px;
+  margin-right: 50px;
+}
+#appbutton{
+  vertical-align: top;
+  padding:10px;
+  margin-left: 175px;
+  margin-right: 50px;
+}

@@ -1,0 +1,17 @@
+#wrapper{
+  width: 1000px;
+  height: 1000px;
+  background: red;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 66px;
+}
+button{
+  margin-left: 138px;
+  margin-top: 38px;
+  padding: 10px;
+}

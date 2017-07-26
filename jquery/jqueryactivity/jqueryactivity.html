@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>jQuery Activity</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="jqueryactivity.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#beach").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/beach.jpg)");
+      });
+      $("#beach").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/beach.jpg)");
+      });
+      $("#dojo").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/dojo.jpg)");
+      });
+      $("#dojo").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/dojo.jpg)");
+      });
+      $("#earth").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/earth.jpg)");
+      });
+      $("#earth").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/earth.jpg)");
+      });
+      $("#forest").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/forest.jpg)");
+      });
+      $("#forest").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/forest.jpg)");
+      });
+      $("#matrix").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/matrix.jpg)");
+      });
+      $("#matrix").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/matrix.jpg)");
+      });
+      $("#snow").hover(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/snow.jpg)");
+      });
+      $("#snow").click(function() {
+        $('#wrapper').css("background-image", "url(C:/users/kschmit1/Documents/CodingDojo/jquery/jqueryactivity/snow.jpg)");
+      });
+      $("button").click(function() {
+        $('.container').replaceWith(
+          "<div class='container'><h1>Select Character</h1><select class='turtle'><option selecteddisabled>Select</option><option class='donny'>Donny</option><option class='leo'>Leo</option><option class='mikey'>Mikey</option><option class='raph'>Raphael</option></select><select><option selecteddisabled>Select</option><option class='donny'>Donny</option><option class='leo'>Leo</option><option class='mikey'>Mikey</option><option class='raph'>Raphael</option></select><button class='fight'>Fight!</button></div>"
+        );
+      });
+
+      // below bracket closes document.ready
+    });
+  </script>
+</head>
+
+<body>
+  <div id='wrapper'>
+    <div class='container'>
+      <h1>Select Arena</h1>
+      <button id="beach">Beach</button>
+      <button id="dojo">Dojo</button>
+      <button id="earth">Earth</button>
+      <button id="forest">Forest</button>
+      <button id="matrix">Matrix</button>
+      <button id="snow">Snow</button>
+    </div>
+    <div class='footer'></div>
+
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>api ajax pokemon</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="pokemon.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("button").click(function() {
+        $('#wrapper').html("<img src='http://pokeapi.co/media/img/1.png'>");
+        for (var i = 2; i < 152; i++) {
+          $('#wrapper').append(`<img src='http://pokeapi.co/media/img/${i}.png'>`);
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <button>Gotta Catch 'em all!</button>
+  </div>
+  <div id="content"></div>
+
+
+</body>
+
+</html>
