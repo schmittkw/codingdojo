@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>for a few billion JavaScript</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="C:/users/kschmit1/documents/codingdojo/api_ajax/pokemon.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    var day = 1;
+    var money = 0.01;
+    for (day; day < 31; day++) {
+      // money = money * 2;
+      money *= 2;
+    }
+    console.log(money)
+
+    // BONUS!!! below
+    var day = 1;
+    var money = 0.01;
+    for (day; money < 1000.01; day++) {
+      money *= 2;
+    }
+    console.log(day)
+
+    // BONUS!!! below
+    var day = 1;
+    var money = 0.01;
+    for (day; money <= 1000000000; day++) {
+      money *= 2;
+    }
+    console.log(day)
+    // BONUS below wouldnt stop loading page
+    var day = 1;
+    var money = 0.01;
+    for (day; Infinity; day++) {
+      money *= 2;
+    }
+    console.log(day)
+  </script>
+</head>
+
+<body>
+  <div id='wrapper'></div>
+
+  <body>
+
+</html>

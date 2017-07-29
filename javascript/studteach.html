@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Numbers Only Array JavaScript</title>
+  <link rel="stylesheet" href="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    var students = [{
+        first_name: 'michael',
+        last_name: 'jordan'
+      },
+      {
+        first_name: 'john',
+        last_name: 'rosales'
+      },
+      {
+        first_name: 'mark',
+        last_name: 'guillen'
+      },
+      {
+        first_name: 'kb',
+        last_name: 'tonel'
+      },
+    ]
+
+    function studteach(arr) {
+      for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i].first_name + ' ' + arr[i].last_name)
+      }
+    }
+    studteach(students);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

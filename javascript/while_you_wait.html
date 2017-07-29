@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>While you wait JavaScript</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="C:/users/kschmit1/documents/codingdojo/api_ajax/pokemon.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    // var daystilbirthday = 60;
+    // while (daystilbirthday > 30) {
+    //   console.log(daystilbirthday, 'days is such a long time!...')
+    //   daystilbirthday = daystilbirthday - 1
+    // }
+    // for (var daystilbirthday = 30; daystilbirthday > 4; daystilbirthday = daystilbirthday - 1) {
+    //   console.log('only', daystilbirthday, 'days left!')
+    // }
+    // for (var daystilbirthday = 4; 1 <= daystilbirthday; daystilbirthday = daystilbirthday - 1) {
+    //   console.log('OMG! only', daystilbirthday, 'days til My Day!!!')
+    // }
+    // console.log('HAPPY BIRTHDAY, ME!!!')
+    var numdays = 60;
+
+    function daysleft(numdays) {
+      while (numdays > 0) {
+        if (numdays > 30) {
+          console.log(numdays + ' days left. Such a long time...');
+        } else if (numdays < 31 && numdays > 4) {
+          console.log('scream it')
+        } else {
+          console.log('SCREAM IT!')
+        }
+        numdays = numdays - 1;
+      }
+    }
+
+    daysleft(60);
+  </script>
+</head>
+
+<body>
+  <div id='wrapper'></div>
+
+  <body>
+
+</html>

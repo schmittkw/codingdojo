@@ -10,21 +10,63 @@
     $(document).ready(function() {
 
       $("button").click(function() {
-        $('#wrapper').html("<img src='http://pokeapi.co/media/img/1.png'>");
-        for (var i = 2; i < 152; i++) {
-          $('#wrapper').append(`<img src='http://pokeapi.co/media/img/${i}.png'>`);
+        $(this).toggle();
+        // $('#wrapper').html("<img id='1'class='char' src='http://pokeapi.co/media/img/1.png'>");
+        for (var i = 1; i <= 151; i++) {
+          $('#wrapper').append(`<img id='${i}'class='char' src='http://pokeapi.co/media/img/${i}.png'>`);
         }
       });
+    }); // closes .ready
+    $(document).on('click', '.char', function() {
+      var characterId = ($(this).attr('id'));
+      console.log($(this).attr('id'));
+      $.ajax({
+        url: `http://pokeapi.co/api/v1/pokemon/${characterId}`,
+        method: 'get',
+        dataType: 'json',
+        success: function(response) {
+          $('#content').html('<h1>' + response.name + '</h1>')
 
-    });
+          $('#content').append(`<img id='${characterId}'class='char' src='http://pokeapi.co/media/img/${characterId}.png'>`);
+
+          $('#content').append('<h3>' + 'Types:' + '</h3>');
+
+          for (var i = 0; i < response.types.length; i++) {
+            $('#content').append('<h3><ul>' + '<li>' + response.types[i].name + '</li>' + '</li></h3>');
+            // console.log(response.types[i])
+          }
+
+          $('#content').append('<h3>' + 'Height:' + response.height + '</h3>');
+
+          $('#content').append('<h3>' + 'Weight:' + response.weight + '</h3>');
+
+          $('#content').append('<h3>' + 'Attack:' + response.attack + '</h3>')
+
+          // for (var i = 0; i < response.types.length; i++) {
+          //
+          //   // console.log(response.types[i])
+          // }
+
+          // console.log(response.name, response.types.[i], response.height, response.weight, response.attack);
+          // console.log(response);
+
+        }
+      })
+    })
   </script>
 </head>
 
 <body>
   <div id="wrapper">
-    <button>Gotta Catch 'em all!</button>
+    <button>Gotta Catch em all!</button>
   </div>
-  <div id="content"></div>
+  <div id="content">
+    <!-- <h1>Pokemon Name</h1>
+    <img id='${i} ' class='char' src='http://pokeapi.co/media/img/1.png'>
+    <h3><ul>Type<li>type 1</li><li>type 2</li></h3>
+    <h3>Height</h3>
+    <h3>Weight</h3> -->
+  </div>
 
 
 </body>

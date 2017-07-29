@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>If you Don't Mind JavaScript</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="C:/users/kschmit1/documents/codingdojo/api_ajax/pokemon.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var hour = 8;
+      var minute = 50;
+      var period = 'am';
+      if (hour == 8 && minute > 49 && period == 'am') {
+        console.log("It's almost 9 in the morning!")
+      }
+      var hour = 7;
+      var minute = 15;
+      var period = 'pm';
+      if (hour > 6 && minute < 30 && period == 'pm') {
+        console.log("It's just after 7 in the evening!")
+      }
+      var hour = 11;
+      var minute = 15;
+      var period = 'pm';
+      if (period == 'am') {
+        if (minute > 30) {
+          console.log('its almost', hour, 'in the morning!')
+        } else if (minute < 30) {
+          console.log('its just after', hour, 'in the morning!!')
+        }
+
+      } else if (period == 'pm') {
+        if (minute > 30) {
+          console.log('its almost', hour, 'in the evening!')
+        } else if (minute < 30) {
+          console.log('its just after', hour, 'in the evening!!')
+        }
+      } else {
+        console.log('cant really tell you what time it is!!!')
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id='wrapper'></div>
+
+  <body>
+
+</html>

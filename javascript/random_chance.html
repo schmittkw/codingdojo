@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Random Chance JavaScript</title>
+  <link rel="stylesheet" href="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    // function random(i) {
+    //   math.random(i) * 100;
+    //   console.log(i);
+    // }
+    // random();
+
+    //     function getRndInteger(min, max) {
+    //       return Math.floor(Math.random() * (max - min)) + min;
+    //     }
+    //     getRndInteger(1, 100);
+    //
+    //     number of quarters == number of games
+    //      1% chance of winning
+    //      winning returns between 50-100 quarters (math.random and floor to determine the number of coins won)
+    //      while the user still has quarters/games use math.random to determine if the win
+    //      if win == true return the number of quarters
+    // the return value of line 23 will be the number of quarters won
+    //
+    // random number is 0-100 chance win
+    // if number is (math.random()*50)+51    from 50 to 100
+    function vegas(quarters, dip) {
+      for (; dip <= quarters; quarters--) {
+        var won = (Math.random() < 0.00999);
+        if (won == true) {
+          var qwon = Math.floor(Math.random() * 51) + 50;
+          return quarters + qwon;
+        }
+      }
+      return q;
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

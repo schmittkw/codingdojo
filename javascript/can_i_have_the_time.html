@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Practice</title>
+  <link rel="stylesheet" href="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    var hour = 8;
+    var minute = 50;
+    var period = "AM";
+
+    function whatTimeIsIt(hour, minute, period){
+      period = period.toUpperCase();
+      console.log(period);
+      var appendix, newHour, whatHalf;
+      if (hour == 8 && minute == 50 && period == "AM") {
+        console.log("It's almost 9 in the morning");
+      }
+      else if (hour == 7 && minute == 15 && period == "PM") {
+        console.log("It's just after 7 in the evening");
+      }
+      else if(period == 'AM'){
+        appendix = 'morning';
+        if(minute > 30){
+          newHour = hour + 1;
+          whatHalf = 'almost';
+        }
+        else{
+          whatHalf = 'just after';
+          newHour = hour;
+        }
+      }
+      else if(period == 'PM'){
+        appendix = 'evening';
+        if(minute > 30){
+          newHour = hour + 1;
+          whatHalf = 'almost';
+        }
+        else{
+          whatHalf = 'just after';
+          newHour = hour;
+        }
+      }
+      console.log("It's " + whatHalf + newHour + "in the " + appendix);
+    }
+    whatTimeIsIt(8 , 35 , "PM")
+    whatTimeIsIt(8 , 35 , "pm")
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

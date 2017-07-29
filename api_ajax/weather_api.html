@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>api ajax weather</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    // $(document).ready(function() {
+    //
+    //   $("#submit").click(function() {
+    //     var stock = $("#stocks").val();
+    //     var url = "http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=" + stock;
+    //
+    //     $.ajax({
+    //       url: url,
+    //       dataType: 'jsonp',
+    //       success: function(results) {
+    //         var status = results.Status;
+    //         var company = results.Name;
+    //         $('#results').append(status + '. Company is: ' + company);
+    //       }
+    //     });
+    //
+    //   })
+    // })
+    $(document).ready(function() {
+      $('form').submit(function() {
+        var cityname = city // your code here (build up your url)
+        $.get(`http://api.openweathermap.org/data/2.5/weather?q=${.cityname}`, function(res) {
+          console.log(res) // your code here
+        }, 'json');
+        // don't forget to return false so the page doesn't refresh
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class='wrapper'>
+
+    <input type="search" class='cityname' value="city name" />
+
+    </form>
+  </div>
+
+
+</body>
+
+</html>
