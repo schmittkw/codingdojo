@@ -1,0 +1,218 @@
+#wrapper {
+  background: blue;
+  width: 1000px;
+  height: 1059px;
+}
+
+#header {
+  background: yellow;
+  width: 1000px;
+  height: 140px;
+}
+
+#header img {
+  width: 100px;
+}
+
+.headtop {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 43px;
+}
+
+h2 {
+  background: blue;
+  padding: 15px;
+  margin-top: -24px;
+}
+
+#nav {
+  background: green;
+  width: 300px;
+  height: 748px;
+}
+
+#lnav {
+  background-image: url('ad_background.png');
+  background-size: cover;
+  width: 298px;
+  height: 436px;
+  margin-top: 10px;
+}
+
+#lnav img {
+  width: 113px;
+  margin-left: 86px;
+  display: block;
+}
+
+#lnav button {
+  margin-left: 75px;
+  margin-top: 37px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+
+#unav {
+  background: violet;
+  width: 298px;
+  height: 298px;
+  margin-top: 10px;
+  border-bottom: 5px solid yellow;
+}
+
+#unav h6 {
+  font-size: 22px;
+  margin-top: -9px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+#topbut {
+  font-size: 23px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 57px;
+  margin-top: 27px;
+  background: blue;
+}
+
+#lowbut {
+  font-size: 23px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 48px;
+  margin-top: 5px;
+  background: orange;
+}
+
+#nav p {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.internet {
+  color: red;
+}
+
+.interblue {
+  color: blue;
+}
+
+#content {
+  background: red;
+  width: 683px;
+  height: 917px;
+  margin-left: 8px;
+}
+
+#nav, #content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#ucon {
+  background-image: url('phone.png');
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 427px 3px;
+  width: 683px;
+  height: 84px;
+}
+
+#ucon img {
+  width: 23px;
+  height: 23px;
+  vertical-align: top;
+}
+
+#ucon a {
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.fonenum {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#rightucon {
+  background: white;
+  width: 196px;
+  height: 100px;
+  display: inline-block;
+  margin-left: 424px;
+}
+
+#rightucon h4 {
+  color: blue;
+  margin-top: -14px;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+#mcon {
+  background: violet;
+  width: 683px;
+  height: 600px;
+}
+
+#lcon {
+  background: yellow;
+  width: 683px;
+  height: 208px;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#lcon img {
+  width: 200px;
+}
+
+#rightlcon {
+  background: green;
+  width: 453px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+#rightlcon h3 {
+  color: blue;
+  font-size: 23px;
+  margin-top: 15px;
+  margin-bottom: -4px;
+}
+
+#rightlcon a {
+  text-decoration: none;
+}
+
+#mcon img {
+  width: 400px;
+  height: 147px;
+  display: block;
+  margin-left: 133px;
+  margin-top: 25px;
+  margin-bottom: 31px;
+}
+
+h1 {
+  vertical-align: top;
+}
+
+h5 {
+  color: white;
+  font-size: 31px;
+  margin-top: -7px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  text-align: center;
+}

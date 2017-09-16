@@ -1,0 +1,157 @@
+#wrapper {
+  width: 1000px;
+  height: 1200px;
+  background: #225075;
+}
+
+#header {
+  background: silver;
+  width: 1000px;
+  height: 234px;
+  background: #225075;
+}
+
+#textsize {
+  margin-left: 259px;
+}
+
+#linkbar {
+  width: 800px;
+  height: 47px;
+  margin-left: 91px;
+  border-radius: 7px;
+  background: #225075;
+}
+
+#nav {
+  width: 200px;
+  height: 380px;
+  margin-left: 107px;
+  background: #225075;
+}
+
+#content {
+  width: 500px;
+  height: 380px;
+  margin-left: 58px;
+  background: #225075;
+}
+
+#nav, #content {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+#leftbot, #rightbot {
+  display: inline-block;
+  background: white;
+  width: 259px;
+  height: 277px;
+  margin-top: 30px;
+  margin-left: 92px;
+  border-top: 5px solid blue;
+  vertical-align: top;
+  padding-left: 27px;
+  padding-right: 61px;
+}
+
+#almostfooter {
+  background: white;
+  width: 1000px;
+  height: 343px;
+}
+
+#footer {
+  text-align: center;
+  background: #225075;
+}
+
+#mainpara {
+  text-align: center;
+}
+
+.pythonheader {
+  width: 349px;
+  height: 128px;
+  padding: 40px;
+}
+
+.navbar {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.container-4 {
+  overflow: hidden;
+  width: 300px;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.container-4 input#search {
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pythonheader, #textsize, .container-4 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#linkbar a {
+  text-decoration: none;
+  margin-left: 19px;
+  font-size: 28px;
+  line-height: 48px;
+  color: white;
+}
+
+#content a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: yellow;
+}
+
+#textsize a, #nav a {
+  color: white;
+}
+
+#almostfooter a {
+  text-decoration: none;
+  color: blue;
+}
+
+#footer a {
+  font-size: 22px;
+  color: white;
+  margin-left: 20px;
+  line-height: 106px;
+  color: white;
+}
+
+ul {
+  list-style-type: square;
+}
+
+h5 {
+  text-align: center;
+}
+
+h6 {
+  margin-top: 0px;
+  text-align: right;
+}
